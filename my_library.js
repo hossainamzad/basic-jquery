@@ -1,5 +1,16 @@
 $(document).ready(function(){
 	console.log("the dolcument is ready.");
+	$("#batman").hide();
+	// $("#batman").css (width: 700px; height: 500px);
+	$("#body").click(function(){
+			$("#batman").show();
+	});
+	// $("#batman").click(function(){
+	// 	$(this).hide();
+	// });
+	$("#batman").click (function(){
+ 		$('#batman').hide();
+ 	});
 
 	$("h1,#h2,#ul,p,#p,#ul2,#footer").animate({
 	  // opacity: .25,
@@ -11,14 +22,11 @@ $(document).ready(function(){
 	// 	type CSS HERE
 	// }, 5000)
 
-	$("#h2").hide(1000);
-	$("#h2").show(2000);
-	$("#ul").fadeOut(4000);
-	$("#ul").fadeIn(5000);
-	$("#ul2").fadeOut(6000);
-	$("#ul2").fadeIn(7000);
-	$("#footer").fadeOut(7000);
-	$("#footer").fadeIn(7000);
+	$("#h2").hide(1000). delay(15000). show(2000). slideUp(1000).slideDown(1000);
+	$("#ul").fadeOut(4000).fadeIn(5000). slideUp(1000).slideDown(1000);
+	$("#ul2").fadeOut(6000).fadeIn(7000).slideUp(1000).slideDown(1000);
+	$("#footer").fadeOut(7000).fadeIn(7000). slideUp(1000).slideDown(1000);
+
 
     $("p").click(
     	function(){
